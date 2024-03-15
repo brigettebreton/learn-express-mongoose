@@ -47,6 +47,9 @@ app.get('/books', (_, res) => {
 })
 
 app.get('/authors', (_, res) => {
+  // Authors.show_all_authors()
+  // .then((data) => res.send(data))
+  // .catch((_) => res.send("No authors found"));
   Authors.show_all_authors(res);
 })
 
